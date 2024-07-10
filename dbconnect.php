@@ -1,0 +1,13 @@
+<?php
+$server="localhost";
+$username="root";
+$password="";
+$database="log";
+$conn=mysqli_connect($server,$username,$password,$database);
+if($conn){
+    echo"Success";
+}
+else{
+    die("Error".mysqil_connect_error());
+}
+?>

@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackkops/Blakessom/Rakenecks/Starstropex/Grex</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+
+    <style>
+        body{
+            font-family: 'Baloo Bhai', cursive;
+            background-color: blanchedalmond;
+        }
+        #sd{
+            display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+        }
+        #sd input, 
+#sd textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    color: black;
+} 
+        #sd input{
+            padding:10px;
+            border:2px solid black;
+        }
+        #sd form{
+            width:40%;
+        }
+        #sd textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+#sd::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('ideogram.jpeg') no-repeat center center/cover;
+    background-size: 800px 1200px;
+    /* background-color: violet; */
+
+}
+#sd{
+    position: relative;
+}
+h1{
+    align-items: center;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+ 
+    <h1>Be A Healthy Member</h1>
+    <div id="sd">
+    <form action="submit.php" method="post">
+        <h2>(** are mandatory to fill up the form)</h2>
+        <label for="username">**Full Name:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">**Email Id</label>
+        <input type="email" id="password" name="password" required><br><br>
+        
+        <label for="password">**Active Mobile Number</label>
+        <input type="number" id="password" name="password" required><br><br>
+        
+        <label for="password">Alternate Mobile Number</label>
+        <input type="number" id="password" name="password" required><br><br>
+
+        <label for="username">**Payment ID/UPI ID:</label>
+        <input type="number" id="username" name="username" required><br><br>
+
+        <label for="username">Weight:</label>
+        <input type="number" id="username" name="username" required><br><br>
+
+        <!-- <label>**Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male :</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female :</label><br><br> -->
+        
+        
+        <label for="country">Status:</label>
+        <select id="country" name="country">
+            <option value="usa">Employee</option>
+            <option value="canada">Student</option>
+            <option value="uk">Own Work</option>
+            <option value="australia">New Established</option>
+        </select><br><br>
+
+        <label for="hobbies">Hobbies:(Surprise purpose only)</label>
+        <input type="checkbox" id="hobby1" name="hobbies[]" value="reading">
+        <label for="hobby1">Reading</label>
+        <input type="checkbox" id="hobby2" name="hobbies[]" value="traveling">
+        <label for="hobby2">Traveling</label>
+        <input type="checkbox" id="hobby3" name="hobbies[]" value="sports">
+        <label for="hobby3">Sports</label><br><br>
+
+        
+
+        <label for="comments">*Location:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</div>
+</body>
+</html>

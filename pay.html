@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+        .ok{
+            /* width:20px; */
+            height:70px;
+            background-color: bisque;
+        }
+        .paytm{
+            text-align: center;
+            justify-content: center;
+        }
+        .po{
+            /* text-align: center; */
+            justify-content: center;
+            /* padding:6px 0px 6px 0px; */
+            border-radius: 8px;
+            background-color: chartreuse;
+            border:2px solid greenyellow;
+            width:350px;
+            height:70px;
+            align-items: center;
+            display: grid; place-items: center; 
+            place-items: center;
+            margin:0 auto;
+        }
+        h3{
+            color: red;
+        }
+        .pok{
+            border:2px solid yellow;
+            background-color: yellow;
+            
+            padding: 10px;
+            border-radius: 5px;
+            
+        }
+        .pok a{
+            color: black;
+            list-style: none;
+            text-decoration: none;
+            padding-right: 45px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="ok">
+        <label>Offers</label><br>
+        <input type="radio" id="IC" name="gender" value="IC">
+        <label for="male">Get 10% off using HDFC platinum credit card.</label><br>
+        <input type="radio" id="fo" name="gender" value="fo">
+        <label for="female">Get 10% off using ICICI platinum credit card.</label><br><br>
+    </div> -->
+    <intent-filter android:autoVerify="true">
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+    
+        <data android:scheme="http" />
+        <data android:scheme="https" />
+    
+        <data android:host="myownpersonaldomain.com" />
+    </intent-filter>
+    <div class="paytm">
+    <img src="payme.jpg" length="" width=""></div>
+    <div class="po">
+        <h1>SCAN TO PAY</h1>
+        <h1 class="pok">Pay through UPI app<br><a href="google.pay://pay?upiId=9777155233@gpay"><img src="icons8-google-pay-48.png"></a>
+            <a href="phonepe://pay?pa=upi&upiId=9777155233@ybl"><img src="icons8-phone-pe-48.png"></a><a href="upi://pay?pa=asishkumardash@paytm&pn=PaytmUser&mc=0000&mode=02&purpose=00&orgid=159761&cust=1350320202"><img src="icons8-paytm-48.png"></a></h1>
+    </div>
+    <br><br><br><br><br>
+        <h2><a href="http://localhost/akd/membership.php">Register yourself as a healthy member</a></h2>
+        <h2><a href="https://chat.whatsapp.com/CyQFOMzINGq12UNpz2unu5">Join The Group Now</a></h2>
+        <!-- <h3>*->Note or Copy your transaction ID after payment for register yourself as member</h3> -->
+    
+        <!-- mailto:<email address> paytm://sendmoney?amount=<amount>&upiId=977715233@paytm-->
+</body>
+</html>
